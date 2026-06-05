@@ -7,6 +7,7 @@
     <title>Shubhankar Mohanty | Portfolio</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css_folder/home.css">
     <link rel="stylesheet" href="css_folder/projectfile.css">
     <link rel="stylesheet" href="css_folder/skillPage.css">
     <link rel="stylesheet" href="css_folder/contactSec.css">
@@ -34,77 +35,46 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center">
+    <section class="home">
 
-        <div class="container mx-auto px-6">
+    <div class="home-container">
 
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="home-content">
 
-                <!-- Left Side -->
-                <div>
-                    <h2 class="text-cyan-400 text-xl font-semibold">
-                        Hello, I'm
-                    </h2>
+            <h4>Hello, I'm</h4>
 
-                    <h1 class="text-5xl md:text-7xl font-bold mt-2">
-                        Shubhankar
-                        <span class="text-cyan-400">Mohanty</span>
-                    </h1>
+            <h1>
+                Shubhankar
+                <span>Mohanty</span>
+            </h1>
 
-                    <h3 class="text-2xl mt-4 text-gray-300">
-                        Data Analyst | AI Enthusiast | ML Learner
-                    </h3>
+            <h3>Data Analyst | AI Enthusiast</h3>
 
-                    <p class="mt-6 text-gray-400 leading-relaxed">
-                        Passionate about transforming raw data into
-                        meaningful insights using Python, SQL,
-                        Power BI, Machine Learning, and AI.
-                    </p>
+            <p>
+                Passionate about Data Analytics, Machine Learning,
+                Artificial Intelligence, and creating impactful solutions
+                through data-driven insights.
+            </p>
 
-                    <div class="mt-8 flex gap-4">
-                        <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold">
-                            View Projects
-                        </a>
+            <div class="home-btns">
+                <a href="#projects" class="primary-btn">
+                    View Projects
+                </a>
 
-                        <a href="resume.pdf"
-                            class="border border-cyan-400 px-6 py-3 rounded-lg hover:bg-cyan-400 hover:text-black transition">
-                            Download Resume
-                        </a>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="flex gap-5 mt-8 text-2xl">
-
-                        <a href="#" class="hover:text-cyan-400">
-                            GitHub
-                        </a>
-
-                        <a href="#" class="hover:text-cyan-400">
-                            LinkedIn
-                        </a>
-
-                        <a href="#" class="hover:text-cyan-400">
-                            Email
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <!-- Right Side -->
-                <div class="flex justify-center">
-
-                    <img src="image/shubhankar.png" alt="Profile"
-                        class="w-80 h-80 object-cover rounded-full border-4 border-cyan-400 shadow-2xl">
-
-                </div>
-
+                <a href="resume.pdf" class="secondary-btn">
+                    Download Resume
+                </a>
             </div>
 
         </div>
 
-    </section>
+        <div class="home-image">
+            <img src="image/shubhankar.png" alt="Profile">
+        </div>
 
+    </div>
+
+</section>
     <!-- About Section -->
 
     <section id="about" class="py-24 bg-gradient-to-b from-gray-900 to-gray-950 text-white">
