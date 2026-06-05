@@ -1,0 +1,239 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Gradient Heading */
+.gradient-text{
+    background:linear-gradient(
+        90deg,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* About Section */
+#about{
+    position:relative;
+    overflow:hidden;
+}
+
+/* Animated Background */
+#about::before{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(6,182,212,0.15);
+    border-radius:50%;
+    filter:blur(120px);
+    top:-100px;
+    left:-100px;
+    z-index:0;
+}
+
+#about::after{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(139,92,246,0.15);
+    border-radius:50%;
+    filter:blur(120px);
+    bottom:-150px;
+    right:-100px;
+    z-index:0;
+}
+
+/* Profile Image */
+.profile-img{
+    border-radius:30px;
+    transition:.5s ease;
+    border:2px solid rgba(255,255,255,.1);
+    box-shadow:
+        0 0 25px rgba(6,182,212,.3),
+        0 0 60px rgba(6,182,212,.15);
+}
+
+.profile-img:hover{
+    transform:scale(1.03) rotate(-2deg);
+}
+
+/* Floating Badge */
+.floating-badge{
+    animation:float 4s ease-in-out infinite;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.3);
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+/* Glass Cards */
+.glass-card{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    transition:all .4s ease;
+}
+
+.glass-card:hover{
+    transform:translateY(-8px);
+    border-color:#06b6d4;
+    box-shadow:
+        0 15px 35px rgba(6,182,212,.2);
+}
+
+/* Info Boxes */
+.info-box{
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.08);
+    padding:18px;
+    border-radius:16px;
+    transition:.4s;
+}
+
+.info-box:hover{
+    transform:translateY(-5px);
+    background:rgba(6,182,212,.08);
+}
+
+/* Stats Cards */
+.stat-card{
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    transition:.4s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px) scale(1.04);
+    box-shadow:
+        0 15px 40px rgba(6,182,212,.25);
+}
+
+/* Skill Tags */
+.skill-tag{
+    padding:12px 22px;
+    border-radius:999px;
+    background:rgba(6,182,212,.08);
+    border:1px solid rgba(6,182,212,.3);
+    transition:.3s ease;
+    cursor:pointer;
+}
+
+.skill-tag:hover{
+    transform:translateY(-4px);
+    background:#06b6d4;
+    color:#000;
+    box-shadow:
+        0 0 20px rgba(6,182,212,.5);
+}
+
+/* Buttons */
+.primary-btn{
+    background:linear-gradient(
+        135deg,
+        #06b6d4,
+        #3b82f6
+    );
+    padding:14px 32px;
+    border-radius:14px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:
+        0 10px 30px rgba(6,182,212,.4);
+}
+
+.secondary-btn{
+    border:2px solid #06b6d4;
+    padding:14px 32px;
+    border-radius:14px;
+    transition:.4s;
+}
+
+.secondary-btn:hover{
+    background:#06b6d4;
+    color:#000;
+    transform:translateY(-4px);
+}
+
+/* Section Divider */
+.section-line{
+    width:120px;
+    height:5px;
+    margin:auto;
+    border-radius:50px;
+    background:linear-gradient(
+        90deg,
+        #06b6d4,
+        #8b5cf6
+    );
+}
+
+/* Glow Text */
+.glow{
+    text-shadow:
+        0 0 10px rgba(6,182,212,.7),
+        0 0 20px rgba(6,182,212,.4);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(
+        #06b6d4,
+        #8b5cf6
+    );
+    border-radius:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .profile-img{
+        max-width:320px;
+        margin:auto;
+    }
+
+    .floating-badge{
+        right:0;
+        bottom:-15px;
+    }
+
+}
